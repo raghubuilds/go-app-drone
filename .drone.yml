@@ -1,7 +1,8 @@
 kind: pipeline
 name: default
 steps:
-- name: test
+- name: build
  image: golang:1.10-alpine
  commands:
-   - "go test"
+   - "go build -o ./myapp"
+
