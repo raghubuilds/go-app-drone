@@ -6,3 +6,8 @@ steps:
   image: golang:1.10-alpine
   commands:
   - "go test"
+- name: build
+ image: golang:1.10-alpine
+ commands:
+   - "go build -o ./myapp"
+
